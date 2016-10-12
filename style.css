@@ -208,8 +208,7 @@ nav li a span{
 .third_page{
 	padding:300px 0 0 0;
 	background-image:url(portfolio_c-assets/page3_bg.jpg);
-	background-repeat:no-repeat;
-	background-position-x:25px;}
+	background-repeat:no-repeat;}
 .third_page .title_3{
 	color:#d5c5b8;
 	border-color:#d5c5b8;
