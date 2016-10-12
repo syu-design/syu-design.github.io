@@ -122,7 +122,7 @@ nav li a span{
 	background-repeat:repeat-x, no-repeat;
 	background-position:top, center;
 	background-size:auto, cover;}
-.second_page .page_title{
+.page_title{
 	width:180px;
 	height:180px;
 	border:1px #fff solid;
@@ -149,7 +149,7 @@ nav li a span{
 	width:250px;
 	height:250px;
 	margin:0 auto;
-	border:1px rgba(199,199,199,1.00) solid;
+	border:8px rgba(240,240,240,1.00) solid;
 	position:relative;
 	overflow:hidden;}
 .second_page .img_overlay a{
@@ -189,7 +189,9 @@ nav li a span{
 	display:inline-block;
 	margin-top:30px;
 	padding:0 15px;
-	color:#333;
+	color:#aaa;
+	border:1px #ccc solid;
+	border-radius:30px;
 	font-size:18px;
 	font-family:'微軟正黑體','Microsoft JhengHei';
 	line-height:50px;
@@ -197,8 +199,84 @@ nav li a span{
 .second_page .second_item>a:hover{
 	color:#77a1b4;
 	border:1px #77a1b4 solid;
-	border-radius:30px;}
+	border-radius:30px;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;}
 	
 .third_page{
-	height:100vh;
-	background-color:rgba(101,102,180,1.00);}
+	padding:300px 0 0 0;
+	background-image:url(portfolio_c-assets/page3_bg.jpg);
+	background-repeat:no-repeat;
+	background-position-x:25px;}
+.third_page .title_3{
+	color:#d5c5b8;
+	border-color:#d5c5b8;
+	margin-left:1415px;}
+.third_page .third_content{
+	padding:0 16%;
+	background-image:url(portfolio_c-assets/graphic_bg.jpg);
+	height:600px;
+	position:relative;}
+.third_page .third_item{
+	padding:0 2%;
+	position:relative;
+	overflow:hidden;}
+.third_page .item_1{
+	position:absolute;
+	top:-30px;
+	}
+.third_page .item_2{
+	position:absolute;
+	top:60px;
+	left:32%;
+	}
+.third_page .item_3{
+	position:absolute;
+	top:30px;
+	left:48%;
+	}
+.third_page .item_4{
+	position:absolute;
+	top:60px;
+	left:64%;
+	}
+.third_page .third_item_title{
+	display:block;
+	width:265px;
+	height:45px;
+	text-align:right;
+	padding-right:20px;
+	padding-top:15px;
+	background:#6c635c;
+	position:absolute;
+	top:-40px;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition:all 0.2s linear;}
+.third_page .third_item_title_bg{
+	width:125px;
+	height:0;
+	position:absolute;
+	right:0;
+	border-top:30px solid #6c635c;
+	border-left:30px solid transparent;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition:all 0.2s linear;}
+.third_page .third_item:hover .third_item_title{
+	background:#905d4d;
+	top:0px;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition:all 0.2s linear;}
+.third_page .third_item:hover .third_item_title_bg{
+	border-top:30px solid #905d4d;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition:all 0.2s linear;}
