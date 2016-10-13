@@ -3,13 +3,12 @@
 
 *{ margin:0; padding:0; box-sizing:border-box; text-decoration:none; color:#fff;}
 body { 
-	font-family: 'Cinzel', serif; }
+	font-family: 'Cinzel', serif, '微軟正黑體','Microsoft JhengHei'; }
 
 nav{
 	height:200px;
 	background-color:#b5c7c3;
 	position:relative;}
-
 nav .logo{
 	padding:50px 0;
 	position:absolute;
@@ -193,7 +192,6 @@ nav li a span{
 	border:1px #ccc solid;
 	border-radius:30px;
 	font-size:18px;
-	font-family:'微軟正黑體','Microsoft JhengHei';
 	line-height:50px;
 	height:50px;}
 .second_page .second_item>a:hover{
@@ -208,7 +206,8 @@ nav li a span{
 .third_page{
 	padding:300px 0 0 0;
 	background-image:url(portfolio_c-assets/page3_bg.jpg);
-	background-repeat:no-repeat;}
+	background-repeat:no-repeat;
+	background-position-x:25px;}
 .third_page .title_3{
 	color:#d5c5b8;
 	border-color:#d5c5b8;
@@ -279,3 +278,56 @@ nav li a span{
 	-moz-transition: all 0.2s linear;
 	-o-transition: all 0.2s linear;
 	transition:all 0.2s linear;}
+.third_page .third_item:hover a:last-child{
+	display:block;
+	width:100%;
+	background:#905d4d;}
+
+.fourth_page{
+	padding:100px 16% 0 16%;
+	height:100vh;
+	background: url(portfolio_c-assets/cari_bg.png) center bottom 45px, linear-gradient(135deg, #dfe0e0 40%, #d3d4d4 0) top left, linear-gradient(-45deg, #c7c8c8 15%, #d3d4d4 0) top right, #7f8989 bottom;
+	background-size:906px 325px,60% 92%,60% 92%,100% 10%;
+	background-repeat:no-repeat;}
+.fourth_page .title_4{
+	color:#666;
+	border-color:#666;
+	float:left;}
+.fourth_page .fourth_content{
+	width:75%;
+	margin-left:60px;
+	padding:45px 60px 0 60px;
+	float:left;
+	border-radius:10px;
+	background:#fff;
+	position:relative;}
+.fourth_page .fourth_item{
+	float:left;
+	width:33%;
+	text-align:center;
+	margin-bottom:20px;}
+.fourth_page .fourth_item a{
+	display:block;
+	color:#333;
+	height:60px;
+	line-height:60px;}
+	
+.arrow_box {
+	clear:both;
+	position: relative;
+	background: #fff;
+}
+.arrow_box:after {
+	top: 100%;
+	left: 30%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(255, 255, 255, 0);
+	border-top-color: #fff;
+	border-width: 20px;
+	margin-left: -20px;
+}
