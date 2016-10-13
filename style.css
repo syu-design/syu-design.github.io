@@ -307,10 +307,31 @@ nav li a span{
 	text-align:center;
 	margin-bottom:20px;}
 .fourth_page .fourth_item a{
+	display:block;}
+.fourth_page .fourth_item .item_title{
 	display:block;
 	color:#333;
 	height:60px;
-	line-height:60px;}
+	line-height:60px;
+	transition:all 0.2s linear;}
+.fourth_page .fourth_item.item_1 img,.fourth_item.item_2 img,.fourth_item.item_3 img{
+	width:250px;
+	height:250px;
+	border:0;}
+.fourth_page .fourth_item.item_1:hover img{
+	border:8px #7ea7b5 solid;}
+.fourth_page .fourth_item.item_1:hover a{
+	color:#7ea7b5;}
+.fourth_page .fourth_item.item_2:hover img{
+	border:8px #ef99b8 solid;}
+.fourth_page .fourth_item.item_2:hover a{
+	color:#ef99b8;}
+.fourth_page .fourth_item.item_3:hover img{
+	border:8px #fcc378 solid;}
+.fourth_page .fourth_item.item_3:hover a{
+	color:#d29d58;}
+.fourth_page .fourth_item.item_1:hover img,.fourth_item.item_1:hover a,.fourth_item.item_2:hover img,.fourth_item.item_2:hover a,.fourth_item.item_3:hover img,.fourth_item.item_3:hover a{
+	transition:all 0.2s linear;}
 	
 .arrow_box {
 	clear:both;
