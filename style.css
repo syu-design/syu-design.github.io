@@ -223,24 +223,20 @@ nav li a span{
 	overflow:hidden;}
 .third_page .item_1{
 	position:absolute;
-	top:-30px;
-	}
+	top:-30px;}
 .third_page .item_2{
 	position:absolute;
 	top:60px;
-	left:32%;
-	}
+	left:32%;}
 .third_page .item_3{
 	position:absolute;
 	top:30px;
-	left:48%;
-	}
+	left:48%;}
 .third_page .item_4{
 	position:absolute;
 	top:60px;
-	left:64%;
-	}
-.third_page .third_item_title{
+	left:64%;}
+.third_page .item_title{
 	display:block;
 	width:265px;
 	height:45px;
@@ -254,7 +250,7 @@ nav li a span{
 	-moz-transition: all 0.2s linear;
 	-o-transition: all 0.2s linear;
 	transition:all 0.2s linear;}
-.third_page .third_item_title_bg{
+.third_page .item_title_bg{
 	width:125px;
 	height:0;
 	position:absolute;
@@ -265,14 +261,14 @@ nav li a span{
 	-moz-transition: all 0.2s linear;
 	-o-transition: all 0.2s linear;
 	transition:all 0.2s linear;}
-.third_page .third_item:hover .third_item_title{
+.third_page .third_item:hover .item_title{
 	background:#905d4d;
 	top:0px;
 	-webkit-transition: all 0.2s linear;
 	-moz-transition: all 0.2s linear;
 	-o-transition: all 0.2s linear;
 	transition:all 0.2s linear;}
-.third_page .third_item:hover .third_item_title_bg{
+.third_page .third_item:hover .item_title_bg{
 	border-top:30px solid #905d4d;
 	-webkit-transition: all 0.2s linear;
 	-moz-transition: all 0.2s linear;
@@ -286,7 +282,10 @@ nav li a span{
 .fourth_page{
 	padding:100px 16% 0 16%;
 	height:100vh;
-	background: url(portfolio_c-assets/cari_bg.png) center bottom 45px, linear-gradient(135deg, #dfe0e0 40%, #d3d4d4 0) top left, linear-gradient(-45deg, #c7c8c8 15%, #d3d4d4 0) top right, #7f8989 bottom;
+	background: url(portfolio_c-assets/cari_bg.png) center bottom 45px, -webkit-linear-gradient(135deg, #dfe0e0 40%, #d3d4d4 0%) top left, -webkit-linear-gradient(-45deg, #c7c8c8 15%, #d3d4d4 0) top right, #7f8989 bottom;
+	background: url(portfolio_c-assets/cari_bg.png) center bottom 45px, -moz-linear-gradient(135deg, #dfe0e0 40%, #d3d4d4 0%) top left, -moz-linear-gradient(-45deg, #c7c8c8 15%, #d3d4d4 0) top right, #7f8989 bottom;
+	background: url(portfolio_c-assets/cari_bg.png) center bottom 45px, -o-linear-gradient(135deg, #dfe0e0 40%, #d3d4d4 0%) top left, -o-linear-gradient(-45deg, #c7c8c8 15%, #d3d4d4 0) top right, #7f8989 bottom;
+	background: url(portfolio_c-assets/cari_bg.png) center bottom 45px, linear-gradient(135deg, #dfe0e0 40%, #d3d4d4 0%) top left, linear-gradient(-45deg, #c7c8c8 15%, #d3d4d4 0) top right, #7f8989 bottom;
 	background-size:906px 325px,60% 92%,60% 92%,100% 10%;
 	background-repeat:no-repeat;}
 .fourth_page .title_4{
@@ -308,7 +307,7 @@ nav li a span{
 	margin-bottom:20px;}
 .fourth_page .fourth_item a{
 	display:block;}
-.fourth_page .fourth_item .item_title{
+.fourth_page .fourth_item a:last-child{
 	display:block;
 	color:#333;
 	height:60px;
@@ -336,8 +335,7 @@ nav li a span{
 .arrow_box {
 	clear:both;
 	position: relative;
-	background: #fff;
-}
+	background: #fff;}
 .arrow_box:after {
 	top: 100%;
 	left: 30%;
@@ -350,5 +348,142 @@ nav li a span{
 	border-color: rgba(255, 255, 255, 0);
 	border-top-color: #fff;
 	border-width: 20px;
-	margin-left: -20px;
-}
+	margin-left: -20px;}
+	
+.fifth_page{
+	background:#e4e5e5;
+	background-image:url(portfolio_c-assets/about_bg.png);
+	height:100vh;
+	padding:0 16%;
+	position:relative;
+	overflow:hidden;}
+.fifth_page .fifth_item{
+	border-radius:30px;
+	position:absolute;}
+.fifth_page .item_1{
+	top:50%;
+	left:50%;
+	width:250px;
+	height:250px;
+	margin-left:-125px;
+	margin-top:-125px;
+	border-radius:250px;
+	background:url(portfolio_c-assets/about_head.png),#e4e5e5;
+	background-position:center;
+	background-repeat:no-repeat;
+	z-index:5;}
+.fifth_page .item_2{
+	right:16%;
+	top:-30px;
+	height:500px;
+	width:33%;
+	background-color:#b4ccc2;
+	padding:130px 60px 30px 60px;}
+.fifth_page .item_2 h1{
+	color:#0f887b;
+	font-size:24px;
+	font-weight:normal;
+	letter-spacing:5px;
+	margin-bottom:15px;}
+.fifth_page .item_2 a{
+	font-size:24px;
+	line-height:40px;
+	letter-spacing:3px;
+	font-weight:lighter;}
+.fifth_page .item_3{
+	left:16%;
+	top:105px;
+	width:33%;
+	background-color:#f4a97a;
+	padding:45px 60px 30px 60px;}
+.fifth_page .item_3 h1{
+	color:#ffe6c5;
+	font-size:24px;
+	font-weight:normal;
+	letter-spacing:5px;
+	margin-bottom:30px;}
+.fifth_page .item_4{
+	position:absolute;
+	right:16%;
+	top:500px;
+	height:400px;
+	width:33%;
+	background-color:#76aca6;
+	padding:130px 60px 30px 60px;}
+.fifth_page .item_4 h1{
+	color:#c7e1d6;
+	font-size:24px;
+	font-weight:normal;
+	letter-spacing:5px;
+	margin-bottom:15px;}
+.fifth_page .item_4 a{
+	font-size:24px;
+	line-height:40px;
+	letter-spacing:3px;
+	font-weight:lighter;}
+.fifth_page .icon_bar{
+	width:100%;
+	font-family:'微軟正黑體','Microsoft JhengHei';
+	font-weight:lighter;
+	position:relative;
+	margin-bottom:30px;}
+.fifth_page .icon{
+	width:70px;
+	height:70px;
+	border-radius:70px;
+	background:-webkit-linear-gradient(135deg, #f19c65 50%, #ea8b50 0%);
+	background:-moz-linear-gradient(135deg, #f19c65 50%, #ea8b50 0%);
+	background:-o-linear-gradient(135deg, #f19c65 50%, #ea8b50 0%);
+	background:linear-gradient(135deg, #f19c65 50%, #ea8b50 0%);
+	color:#f5d1a0;
+	font-size:36px;
+	line-height:70px;
+	text-align:center;}
+.fifth_page .icon img{
+	margin-top:15px;}
+.fifth_page .icon_bar h2{
+	font-size:18px;
+	font-weight:lighter;
+	padding-left:10px;
+	position:absolute;
+	left:75px;
+	top:0px;}
+.fifth_page .icon_bar h3{
+	font-size:36px;
+	font-weight:lighter;
+	padding-left:10px;
+	position:absolute;
+	left:75px;
+	bottom:0px;}
+.fifth_page .icon_bar span{
+	font-size:24px;}
+.fifth_page .icon_bar .bar{
+	background:#f5d1a0;
+	width:50%;
+	height:5px;
+	border-radius:5px;
+	position:absolute;
+	left:180px;
+	bottom:20px;}
+.fifth_page .icon_bar .circle{
+	background:#EA8B50;
+	width:16px;
+	height:16px;
+	border-radius:16px;
+	border:2px #fff solid;}
+.fifth_page .icon_bar .circle_1{
+	position:absolute;
+	top:-5px;
+	left:90%;}
+.fifth_page .icon_bar .circle_2{
+	position:absolute;
+	top:-5px;
+	left:85%;}
+.fifth_page .icon_bar .circle_3{
+	position:absolute;
+	top:-5px;
+	left:80%;}
+.fifth_page .icon_bar .circle_4{
+	position:absolute;
+	top:-5px;
+	left:95%;}
