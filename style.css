@@ -75,25 +75,54 @@ nav li a span{
 .first_page .row_title{
 	width:190px;
 	height:190px;
-	overflow:hidden;}
+	overflow:hidden;
+	font-family:'Cinzel', serif, "heisei-mincho-std",sans-serif;
+	font-size:12px;
+	font-style: normal;
+	font-weight: 300;
+	letter-spacing:3px;}
 .first_page .row_1_a{
 	background-color:#77a1b4;
 	border-top:10px #fff solid;
 	border-left:10px #fff solid;
 	margin:180px 0 0 auto;
 	text-align:center;}
+.first_page .row_1_a a{
+	color:#c5dce7;}
+.first_page .row_1_a span{
+	display:block;
+	font-size:30px;
+	padding:40px 45px 10px 55px;
+	color:#c5dce7;
+	letter-spacing:10px;}
 .first_page .row_2_a{
 	background-color:#9db881;
 	border-bottom:10px #fff solid;
 	border-right:10px #fff solid;
 	margin:0 0 180px 0;
 	text-align:center;}
+.first_page .row_2_a a{
+	color:#e4f4d4;}
+.first_page .row_2_a span{
+	display:block;
+	font-size:30px;
+	padding:40px 45px 10px 55px;
+	color:#e4f4d4;
+	letter-spacing:10px;}
 .first_page .row_3_a{
 	background-color:#8893b4;
 	border-bottom:10px #fff solid;
 	border-right:10px #fff solid;
 	text-align:center;
 	float:left;}
+.first_page .row_3_a a{
+	color:#d4ddec;}
+.first_page .row_3_a span{
+	display:block;
+	font-size:30px;
+	padding:40px 45px 10px 55px;
+	color:#d4ddec;
+	letter-spacing:10px;}
 .first_page .book{
 	float:right;
 	width:373px;
@@ -125,10 +154,22 @@ nav li a span{
 	width:180px;
 	height:180px;
 	border:1px #fff solid;
-	margin-bottom:60px;}
+	margin-bottom:60px;
+	font-family:'Cinzel', serif, "heisei-mincho-std",sans-serif;
+	font-size:12px;
+	font-style: normal;
+	font-weight: 300;
+	letter-spacing:3px;}
 .second_page .title_2{
 	color:#ccd0d3;
-	border-color:#ccd0d3;}
+	border-color:#ccd0d3;
+	text-align:center;}
+.second_page .title_2 span{
+	display:block;
+	font-size:30px;
+	padding:40px 40px 10px 50px;
+	color:#ccd0d3;
+	letter-spacing:10px;}
 .second_page .second_content{
 	width:100%;
 	padding:0 6%;
@@ -211,7 +252,14 @@ nav li a span{
 .third_page .title_3{
 	color:#d5c5b8;
 	border-color:#d5c5b8;
-	margin-left:1415px;}
+	margin-left:1415px;
+	text-align:center;}
+.third_page .title_3 span{
+	display:block;
+	font-size:30px;
+	padding:40px 40px 10px 50px;
+	color:#d5c5b8;
+	letter-spacing:10px;}
 .third_page .third_content{
 	padding:0 16%;
 	background-image:url(portfolio_c-assets/graphic_bg.jpg);
@@ -291,7 +339,14 @@ nav li a span{
 .fourth_page .title_4{
 	color:#666;
 	border-color:#666;
-	float:left;}
+	float:left;
+	text-align:center;}
+.fourth_page .title_4 span{
+	display:block;
+	font-size:30px;
+	padding:40px 40px 10px 50px;
+	color:#666;
+	letter-spacing:10px;}
 .fourth_page .fourth_content{
 	width:75%;
 	margin-left:60px;
