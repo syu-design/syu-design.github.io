@@ -264,8 +264,8 @@ nav li a span{
 	color:#43363d;
 	letter-spacing:10px;}
 .third_page .third_content{
-	padding:0 16%;
-	background-image:url(portfolio_c-assets/graphic_bg.jpg);
+	margin-right:16%;
+	background-image:url(portfolio_c-assets/graphic_bg.png);
 	height:600px;
 	position:relative;}
 .third_page .third_item{
@@ -274,19 +274,20 @@ nav li a span{
 	overflow:hidden;}
 .third_page .item_1{
 	position:absolute;
-	top:-30px;}
+	top:-30px;
+	left:20%;}
 .third_page .item_2{
 	position:absolute;
 	top:60px;
-	left:32%;}
+	left:40%;}
 .third_page .item_3{
 	position:absolute;
 	top:30px;
-	left:48%;}
+	left:60%;}
 .third_page .item_4{
 	position:absolute;
-	top:60px;
-	left:64%;}
+	top:120px;
+	left:80%;}
 .third_page .item_title{
 	display:block;
 	width:265px;
@@ -295,7 +296,7 @@ nav li a span{
 	text-align:right;
 	padding-right:20px;
 	padding-top:15px;
-	background:#8f7766;
+	background:#543a25;
 	position:absolute;
 	top:-40px;
 	-webkit-transition: all 0.2s linear;
@@ -307,7 +308,7 @@ nav li a span{
 	height:0;
 	position:absolute;
 	right:0;
-	border-top:30px solid #8f7766;
+	border-top:30px solid #543a25;
 	border-left:30px solid transparent;
 	-webkit-transition: all 0.2s linear;
 	-moz-transition: all 0.2s linear;
