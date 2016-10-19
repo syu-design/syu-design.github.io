@@ -11,6 +11,7 @@
 </head>
 
 <body>
+<script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
 <header>
     <nav>
         <div class="logo">
@@ -164,48 +165,66 @@
             	<div class="icon">&lt;&gt;</div>
                 <h2>HTML</h2>
                 <div>
-                	<h3>95<span>%</span></h3>
-                    <div class="bar"><div class="circle circle_1"></div></div>
+                	<h3><span id="pageLoad">0</span>%</h3>
+                    <div class="bar">
+                    	<div class="revealOnScroll little_bar" data-animation="little_bar_1"></div>
+                    	<div class="revealOnScroll circle"  data-animation="circle_1"></div>
+                    </div>
                 </div>
             </div>
             <div class="icon_bar">
             	<div class="icon">{ }</div>
                 <h2>CSS</h2>
                 <div>
-                	<h3>90<span>%</span></h3>
-                    <div class="bar"><div class="circle circle_2"></div></div>
+                	<h3><span id="pageLoad1">0</span>%</h3>
+                    <div class="bar">
+                    	<div class="revealOnScroll little_bar" data-animation="little_bar_1" data-timeout="400"></div>
+                    	<div class="revealOnScroll circle"  data-animation="circle_2" data-timeout="400"></div>
+                    </div>
                 </div>
             </div>
             <div class="icon_bar">
             	<div class="icon">Ps</div>
                 <h2>Photoshop</h2>
                 <div>
-                	<h3>90<span>%</span></h3>
-                    <div class="bar"><div class="circle circle_2"></div></div>
+                	<h3><span id="pageLoad2">0</span>%</h3>
+                    <div class="bar">
+                    	<div class="revealOnScroll little_bar" data-animation="little_bar_1" data-timeout="800"></div>
+                    	<div class="revealOnScroll circle"  data-animation="circle_2" data-timeout="800"></div>
+                    </div>
                 </div>
             </div>
             <div class="icon_bar">
             	<div class="icon">Ai</div>
                 <h2>Illustrator</h2>
                 <div>
-                	<h3>85<span>%</span></h3>
-                    <div class="bar"><div class="circle circle_3"></div></div>
+                	<h3><span id="pageLoad3">0</span>%</h3>
+                    <div class="bar">
+                    	<div class="revealOnScroll little_bar" data-animation="little_bar_2" data-timeout="1200"></div>
+                    	<div class="revealOnScroll circle"  data-animation="circle_3" data-timeout="1200"></div>
+                    </div>
                 </div>
             </div>
             <div class="icon_bar">
             	<div class="icon"><img src="portfolio_c-assets/about_icon01.png" alt="brain"></div>
                 <h2>隨時準備學習新技術的腦袋</h2>
                 <div>
-                	<h3>MAX</h3>
-                    <div class="bar"><div class="circle circle_4"></div></div>
+                	<h3><span id="pageLoad4">0</span>%</h3>
+                    <div class="bar">
+                    	<div class="revealOnScroll little_bar" data-animation="little_bar_3" data-timeout="1600"></div>
+                    	<div class="revealOnScroll circle"  data-animation="circle_4" data-timeout="1600"></div>
+                    </div>
                 </div>
             </div>
             <div class="icon_bar">
             	<div class="icon"><img src="portfolio_c-assets/about_icon02.png" alt="heart"></div>
                 <h2>對設計永保熱情的心</h2>
                 <div>
-                	<h3>MAX</h3>
-                    <div class="bar"><div class="circle circle_4"></div></div>
+                	<h3><span id="pageLoad5">0</span>%</h3>
+                    <div class="bar">
+                    	<div class="revealOnScroll little_bar" data-animation="little_bar_3" data-timeout="2000"></div>
+                    	<div class="revealOnScroll circle"  data-animation="circle_4" data-timeout="2000"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -224,7 +243,74 @@
       async: true
     },
     h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-  })(document);
+  })(document);//adobe雲端字型
+</script>
+<script>
+$(function() {
+  var $window           = $(window),
+      win_height_padded = $window.height() * 1.1,
+      isTouch           = Modernizr.touch;
+  if (isTouch) { $('.revealOnScroll').addClass('animated'); }
+
+  $window.on('scroll', revealOnScroll);
+  
+  function revealOnScroll() {
+    var scrolled = $window.scrollTop(),
+        win_height_padded = $window.height() * 1.1;
+
+    // Showed...
+    $(".revealOnScroll:not(.animated)").each(function () {
+      var $this     = $(this),
+          offsetTop = $this.offset().top;
+      if (scrolled + win_height_padded > offsetTop) {
+        if ($this.data('timeout')) {
+          window.setTimeout(function(){
+            $this.addClass('animated ' + $this.data('animation'));
+          }, parseInt($this.data('timeout'),10));
+		  
+		  //數字跳動效果 RAY LEE & https://github.com/talmand/jquery-animate-numbers
+		  (function($) {
+    		$.fn.animateNumbers = function(stop, commas, duration, ease) {
+        	return this.each(function() {
+            var $this = $(this);
+            var start = parseInt($this.text().replace(/,/g, ""));
+			commas = (commas === undefined) ? true : commas;
+            $({value: start}).animate({value: stop}, {
+            	duration: duration == undefined ? 1000 : duration,
+            	easing: ease == undefined ? "swing" : ease,
+            	step: function() {
+            		$this.text(Math.floor(this.value));
+					if (commas) { $this.text($this.text().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")); }
+            	},
+            	complete: function() {
+            	   if (parseInt($this.text()) !== stop) {
+            	       $this.text(stop);
+					   if (commas) { $this.text($this.text().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")); }
+            	   }
+            	}
+            });
+        });
+    };
+})(jQuery);
+ $(document).ready(function() {
+           
+            $("#pageLoad").animateNumbers(95, true, 800);
+			$("#pageLoad1").animateNumbers(90, true, 1200);
+			$("#pageLoad2").animateNumbers(90, true, 1600);
+			$("#pageLoad3").animateNumbers(85, true, 2000);
+			$("#pageLoad4").animateNumbers(100, true, 2400);
+			$("#pageLoad5").animateNumbers(100, true, 2800);
+        });//數字動畫結束
+
+		  
+        } else {
+          $this.addClass('animated ' + $this.data('animation'));
+        }
+      }
+    });   
+  }
+  revealOnScroll();
+});//動畫效果By Benoît Boucart
 </script>
 </body>
 </html>
