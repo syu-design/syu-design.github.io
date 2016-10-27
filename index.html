@@ -2,8 +2,10 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>SYU Design</title>
 <link href="style.css" rel="stylesheet" type="text/css">
+<link href="response.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
 <script src="jquery-1.10.2.min.js"></script>
 <script src="jquery.stellar.js"></script>
@@ -18,10 +20,10 @@
             <a href="#"><img src="portfolio_c-assets/logo.png" alt="LOGO" title="SYU WEBSITE"></a>
         </div>
         <ul>
-            <li><a href="#"><span>Web Design</span>網頁設計</a></li>
-            <li><a href="#"><span>Graphic Design</span>平面設計</a></li>
-            <li><a href="#"><span>Caricatures</span>人物繪製</a></li>
-            <li><a href="#"><span>About SYU</span>關於SYU</a></li></ul>
+            <li><a href="#page_2"><span>Web Design</span>網頁設計</a></li>
+            <li><a href="#page_3"><span>Graphic Design</span>平面設計</a></li>
+            <li><a href="#page_4"><span>Caricatures</span>人物繪製</a></li>
+            <li><a href="#page_5"><span>About SYU</span>關於SYU</a></li></ul>
     </nav>
 	<div class="first_page">
         <div class="row_1">
@@ -40,7 +42,7 @@
     </div>
 </header>
 <main>
-	<div class="second_page">
+	<div class="second_page" id="page_2">
     	<div class="page_title title_2"><span>網頁設計</span>Web Design</div>
         <div class="second_content">
         	<div class="second_item">
@@ -103,7 +105,7 @@
             </div>
         </div>
     </div>
-    <div class="third_page" data-stellar-background-ratio="0.5">
+    <div class="third_page" data-stellar-background-ratio="0.5" id="page_3">
     	<div class="page_title title_3"><span>平面設計</span>Graphic Design</div>
         <div class="third_content">
         	<div class="third_item item_1">
@@ -124,7 +126,7 @@
             </div>
         </div>
     </div>
-    <div class="fourth_page">
+    <div class="fourth_page" id="page_4">
     	<div class="page_title title_4"><span>人物繪製</span>Caricatures</div>
         <div class="fourth_content">
         	<div class="fourth_item item_1">
@@ -148,7 +150,7 @@
         </div>
         <div class="arrow_box"></div>
     </div>
-    <div class="fifth_page">
+    <div class="fifth_page" id="page_5">
     	<div class="fifth_item item_1"></div>
         <div class="fifth_item item_2">
         	<h1>About SYU / 關於我</h1>
@@ -245,72 +247,6 @@
     h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
   })(document);//adobe雲端字型
 </script>
-<script>
-$(function() {
-  var $window           = $(window),
-      win_height_padded = $window.height() * 1.1,
-      isTouch           = Modernizr.touch;
-  if (isTouch) { $('.revealOnScroll').addClass('animated'); }
-
-  $window.on('scroll', revealOnScroll);
-  
-  function revealOnScroll() {
-    var scrolled = $window.scrollTop(),
-        win_height_padded = $window.height() * 1.1;
-
-    // Showed...
-    $(".revealOnScroll:not(.animated)").each(function () {
-      var $this     = $(this),
-          offsetTop = $this.offset().top;
-      if (scrolled + win_height_padded > offsetTop) {
-        if ($this.data('timeout')) {
-          window.setTimeout(function(){
-            $this.addClass('animated ' + $this.data('animation'));
-          }, parseInt($this.data('timeout'),10));
-		  
-		  //數字跳動效果 RAY LEE & https://github.com/talmand/jquery-animate-numbers
-		  (function($) {
-    		$.fn.animateNumbers = function(stop, commas, duration, ease) {
-        	return this.each(function() {
-            var $this = $(this);
-            var start = parseInt($this.text().replace(/,/g, ""));
-			commas = (commas === undefined) ? true : commas;
-            $({value: start}).animate({value: stop}, {
-            	duration: duration == undefined ? 1000 : duration,
-            	easing: ease == undefined ? "swing" : ease,
-            	step: function() {
-            		$this.text(Math.floor(this.value));
-					if (commas) { $this.text($this.text().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")); }
-            	},
-            	complete: function() {
-            	   if (parseInt($this.text()) !== stop) {
-            	       $this.text(stop);
-					   if (commas) { $this.text($this.text().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")); }
-            	   }
-            	}
-            });
-        });
-    };
-})(jQuery);
- $(document).ready(function() {
-           
-            $("#pageLoad").animateNumbers(95, true, 800);
-			$("#pageLoad1").animateNumbers(90, true, 1200);
-			$("#pageLoad2").animateNumbers(90, true, 1600);
-			$("#pageLoad3").animateNumbers(85, true, 2000);
-			$("#pageLoad4").animateNumbers(100, true, 2400);
-			$("#pageLoad5").animateNumbers(100, true, 2800);
-        });//數字動畫結束
-
-		  
-        } else {
-          $this.addClass('animated ' + $this.data('animation'));
-        }
-      }
-    });   
-  }
-  revealOnScroll();
-});//動畫效果By Benoît Boucart
-</script>
+<script src="animation.js"></script>
 </body>
 </html>
