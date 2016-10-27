@@ -1,0 +1,32 @@
+@media (max-width:1366px){
+nav{}
+nav .logo{
+	-ms-transform:scale(0.75,0.75);
+	-webkit-transform:scale(0.75,0.75);
+	transform:scale(0.75,0.75);}
+nav .logo{
+	padding:25px 0;}
+nav ul{
+	top:110px;
+	margin-left:-333px;}
+nav li{
+	background-size:13.5px 15px;
+	margin-right:32px;}
+nav li a{ 
+	display:block;
+	margin-left:24px;
+	font-size:13px;}
+
+.first_page{
+	margin:3% auto;}
+
+.second_page{
+	padding:5% 7%;}
+.second_page .second_content{
+	padding-top:30px;}
+.second_page .second_content:last-child{
+	padding-bottom:25px;}
+/*.second_page .second_item>a{	
+	margin-top:15px;}*/
+}
+
