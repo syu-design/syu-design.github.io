@@ -28,5 +28,74 @@ nav li a{
 	padding-bottom:25px;}
 /*.second_page .second_item>a{	
 	margin-top:15px;}*/
+
+.third_page{
+	padding:100px 0 0 0;}
+.third_page .title_3{
+	margin:0 7% 0 auto;
+	margin-bottom:80px;}
+.third_page .third_content{
+	margin-right:7%;}
+.third_page .third_item{
+	width:18%;}
+.third_page .item_1{
+	position:absolute;
+	top:-30px;
+	left:11%;}
+.third_page .item_2{
+	position:absolute;
+	top:60px;
+	left:33%;}
+.third_page .item_3{
+	position:absolute;
+	top:30px;
+	left:55%;}
+.third_page .item_4{
+	position:absolute;
+	top:120px;
+	left:77%;}
+	
+.fourth_page .fourth_content{
+	margin-left:45px;
+	padding:45px 40px 0 50px;}
+
+.fifth_page .item_1{
+	top:50%;
+	left:50%;
+	width:200px;
+	height:200px;
+	margin-left:-100px;
+	margin-top:-100px;
+	border-radius:200px;
+	background-size:75%;}
+.fifth_page .item_2{
+	right:13%;
+	top:-30px;
+	height:460px;
+	width:36%;
+	background-color:#b4ccc2;
+	padding:130px 20px 30px 45px;}
+.fifth_page .item_3{
+	left:13%;
+	top:105px;
+	width:36%;
+	background-color:#f4a97a;
+	padding:45px 60px 30px 45px;}
+.fifth_page .icon_bar{
+	margin-bottom:24px;}
+.fifth_page .icon_bar span{
+	font-size:28px;}
+.fifth_page .icon_bar .bar{
+	left:150px;}
+.fifth_page .item_4{
+	position:absolute;
+	right:13%;
+	top:460px;
+	height:250px;
+	width:36%;
+	padding:70px 20px 30px 45px;}
+.fifth_page .item_2 h1,.item_2 a,.item_3 h1,.item_4 h1,.item_4 a{
+	font-size:20px;}
 }
+
 
