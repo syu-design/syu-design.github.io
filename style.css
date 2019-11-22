@@ -1,0 +1,227 @@
+body{
+	font-family: '微軟正黑體', sans-serif;
+	box-sizing: border-box;
+}
+nav{
+	width: 100%;
+	background: #ed822b;
+}
+main{
+	padding: 0 30px;
+}
+main>div{
+	padding-bottom: 10px;
+	background-image: url(images/separation.png);
+	background-position: bottom center;
+	background-repeat: no-repeat;
+}
+.navbar, main{
+	width: 1200px;
+	margin:0 auto;
+}
+.navbar-dark .navbar-toggler{
+	border-color: white; 
+}
+.navbar-brand{
+	margin-right: 0;
+	padding: 0;
+}
+.nav-item{
+	padding-left: 15px;
+	text-align: center;
+	font-size: 0.9rem;
+	letter-spacing: 0.3rem;
+}
+.nav-item i{
+	font-size: 2rem;
+	padding: 0.5rem;
+}
+.banner{
+	position: relative;
+	margin-top: 1.5rem; 
+	height: 600px;
+	overflow: hidden;
+}
+.banner img{
+	min-height: 600px;
+	height: 25vw;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.about, .teacher, .course ,.future{
+	margin: 90px 0;
+	letter-spacing: 0.5rem;
+}
+.about{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.about:after{
+	position: absolute;
+	display: block;
+	content: "";
+	width: 25%;
+	height: 24px;
+	bottom: -10px;
+	right: 0;
+	background-image: url(images/decoration.png);
+	background-repeat: no-repeat;
+}
+.about div{
+	flex: 1;
+}
+.title{
+	margin-bottom: 2rem;
+	font-size: 2.25rem;
+	font-weight: 600;
+	color: #ed822b;
+	letter-spacing: 1rem;
+}
+.about .title{
+	position: relative;
+}
+.about .title:after{
+	position: absolute;
+	display: block;
+	content: "";
+	width: 50%;
+	height: 50px;
+	top: 0;
+	right: 0;
+	background: url(images/dot.png);
+}
+article{
+	padding-bottom: 2rem;
+	font-size: 1.2rem;
+	line-height: 2rem;
+	color: #666;
+}
+.about-img{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-end;
+}
+.about-img div{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	animation-name: brain;
+	animation-duration: 1s;
+	animation-iteration-count:infinite;
+	animation-timing-function: ease-out;
+	background: url(images/light.png) no-repeat;
+}
+@keyframes brain{
+	from{
+		background: url(images/light.png) no-repeat;
+	}
+	to{
+		background: none;
+	}
+}
+
+
+@media (max-width: 1200px){
+	.navbar, main{
+		width: 992px;
+	}
+	.banner{
+		height: 500px;
+	}
+	.banner img{
+		min-height: 450px;
+		height: 20vw;
+	}
+	.about, .teacher, .course ,.future{
+		margin: 30px 0;
+	}
+}
+
+@media (max-width: 992px){
+	.navbar, main{
+		width: 95%;
+	}
+	.navbar-nav{
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	.about{
+		flex-direction: column;
+	}
+}
+
+/*menu icon change size for 736px*/
+@media (max-width: 736px){
+	.nav-item{
+		padding-left: 0px;
+		font-size: 0.8rem;
+	}
+	.nav-item i{
+		font-size: 1.5rem;
+	}
+	.banner{
+		height: 65vw;
+	}
+	.banner img{
+		min-height: 60vw;
+		height: 60vw;
+	}
+}
+
+@media (max-width: 576px){
+	.navbar-brand{
+		width: 80%;
+	}
+	.navbar-brand img{
+		width: 100%;
+	}
+	.navbar-toggler{
+		padding: .1rem .3rem;
+		font-size: 0.8rem;
+	}
+	.nav-item{
+		font-size: 0.4rem;
+		letter-spacing: 0.1rem;
+	}
+	.nav-item i{
+		font-size: 1.2rem;
+	}
+	.banner{
+		margin-top: 0.5rem; 
+	}
+	main{
+		padding: 15px;
+		padding-top: 0px;
+	}
+	.title{
+		font-size: 1.2rem;
+		line-height: 1rem;
+		margin-bottom: 15px; 
+	}
+	.about, .teacher, .course ,.future{
+		margin: 15px 0;
+	}
+	.about .title:after{
+		width: 50%;
+		height: 20px;
+		background-size: 5%;
+	}
+	.about-img{
+		height: 300px;
+	}
+	.about-img img{
+		width: 50%;
+	}
+	article{
+		font-size: 0.8rem;
+		line-height: 1.2rem;
+		letter-spacing: 0.2rem;
+	}
+}
